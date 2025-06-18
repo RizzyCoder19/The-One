@@ -1,0 +1,64 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tumhari Yaadon Ka Web Mahal</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+  <audio id="bg-music" src="assets/audio/bardali.mp3" autoplay loop></audio>
+  <div class="intro">
+    <h1>Mere Alfaazon Ka Tohfa 🎁</h1>
+    <p class="shayari">
+      “Main tera tha, hoon, aur rehne ka irada hai…<br>
+      Har saal teri yaadon mein ek jahan basaane ka vaada hai.”
+    </p>
+    <img src="assets/images/her-pic.jpg" alt="Her" class="hero-pic">
+  </div>
+
+  <section class="timeline">
+    <h2>Hamari Kahaani</h2>
+    <div class="events">
+      <div class="event">
+        <h3>🔹 First Hello</h3>
+        <p>Yaad hai woh pehla salaam? Tab se dil ne tujhe apna maan liya tha...</p>
+      </div>
+      <div class="event">
+        <h3>🔸 Late Night Talks</h3>
+        <p>Teri har baat, meri neend ki dushman ban gayi thi — pyaari si!</p>
+      </div>
+      <div class="event">
+        <h3>🔹 That One Fight</h3>
+        <p>Tod diya tha dil... par sambhal bhi tu hi gayi thi.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="celebration">
+    <h2>🎂 Happy Birthday, My Queen</h2>
+    <button onclick="startHeartRain()">Tap to Begin the Magic 💖</button>
+    <canvas id="heartCanvas"></canvas>
+  </section>
+
+  <section class="letter">
+    <h2>Mera Khaas Paighaam ✍️</h2>
+    <p>
+      Tere bina sab adhoora tha...<br>
+      Aaj teri muskaan ke liye maine dil se ye tohfa banaya hai.<br><br>
+      Ek nayi shuruaat, ek nayi dua — sirf tere liye.
+    </p>
+  </section>
+
+  <section class="surprise">
+    <h2>Tohfa 💝</h2>
+    <button onclick="revealSurprise()">Open Your Gift</button>
+    <div id="surprise-box" style="display:none;">
+      <video controls src="assets/video/surprise-video.mp4" class="surprise-video"></video>
+    </div>
+  </section>
+</body>
+</html>
